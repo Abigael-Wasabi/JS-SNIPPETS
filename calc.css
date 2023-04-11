@@ -1,0 +1,168 @@
+.calculator {
+   width: 400px;
+    margin:auto;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  button {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 1px solid #ff01d0;
+    outline: none;
+    background-color: #069484;
+    cursor: default;
+  }
+  
+  button:hover {
+    background-color: #26e7c7;
+    color: rgb(0, 154, 118);
+  }
+  
+  .output {
+    width: 400px;
+    height: 100px;
+    font-size: 24px;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: right;
+    border-radius: 5px;
+    border: 1px solid #ff01d0;
+    outline: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+  .clock {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 5px solid #068494;
+    position: relative;
+    margin: 50px auto;
+  }
+  
+  .hourHand,
+  .minuteHand,
+  .secondHand {
+    width: 50%;
+    height: 4px;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100% 50%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+  }
+  
+  .hourHand {
+    width: 40%;
+    height: 6px;
+    background-color: #000000;
+    z-index: 3;
+  }
+  
+  .minuteHand {
+    width: 60%;
+    height: 4px;
+    background-color: #6d8583;
+    z-index: 2;
+  }
+  
+  .secondHand {
+    width: 70%;
+    height: 2px;
+    background-color:#3b99a59d;
+    z-index: 1;
+  }
+  
+  
+  .no {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transform-origin: 50% 120%;
+  }
+  
+  .N1 {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .N2 {
+    top: 20px;
+    right: 10px;
+  }
+  
+  .N3 {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .N4 {
+    bottom: 20px;
+    right: 10px;
+  }
+  
+  .N5 {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .N6 {
+    bottom: 20px;
+    left: 10px;
+  }
+  
+  .N7 {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .N8 {
+    top: 20px;
+    left: 10px;
+  }
+  
+  .N9 {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .N10 {
+    top: 80px;
+    left: 10px;
+  }
+  
+  .N11 {
+    top: 90px;
+    right: 10px;
+  }
+  
+  .N12 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+  }
+  
