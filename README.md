@@ -1,2 +1,1 @@
-# The Analogue clock using HTML , CSS and Javascript
-#The calculator using HTML, CSS and Javascript
+# The Analogue clock using and the calculator using HTML, CSS and Javascript
