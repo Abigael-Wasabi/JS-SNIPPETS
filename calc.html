@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/calc.css">
+  <link rel="icon" href="/Calc.webp">
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" class="output">
+    <table >
+      <tr>
+        <td><button>1</button></td>
+        <td><button>2</button></td>
+        <td><button>3</button></td>
+        <td><button>+</button></td>
+      </tr>
+      <tr>
+        <td><button>4</button></td>
+        <td><button>5</button></td>
+        <td><button>6</button></td>
+        <td><button>-</button></td>
+      </tr>
+      <tr>
+        <td><button>7</button></td>
+        <td><button>8</button></td>
+        <td><button>9</button></td>
+        <td><button>*</button></td>
+      </tr>
+      <tr>
+        <td><button>/</button></td>
+        <td><button>0</button></td>
+        <td><button>C</button></td>
+        <td><button>=</button></td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    // get the calculator buttons and output field
+const buttons = document.querySelectorAll("button");
+const output = document.querySelector(".output");
+
+// add click event listeners to the buttons
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // get the button text and output value
+    const buttonText = button.innerText;
+    const outputValue = output.value;
+
+    // handle the button click
+    if (buttonText === "C") {
+      // clear the output
+      output.value = "";
+    } else if (buttonText === "=") {
+      // evaluate the expression and set the output value
+      try {
+        output.value = eval(outputValue);
+      } catch (e) {
+        output.value = "Error";
+      }
+    } else {
+      // append the button text to the output value
+      output.value = outputValue + buttonText;
+    }
+  });
+});
+  </script>
+</body>
+</html>
