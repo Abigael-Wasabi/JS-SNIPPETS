@@ -1,0 +1,186 @@
+ body{
+  /* animation-name: clock-animation;
+  animation-iteration-count: infinite; */
+  /* animation-duration: 6s; */
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+
+  /* align-items:center; */
+  font-size: 20px;
+  font-family:'Courier New', Courier, monospace;
+ 
+
+ } 
+#clock{
+  border-radius: 50%;
+  background-color: #068494;
+  width: 500px;
+  height: 500px;
+  border: 6px solid rgb(0, 234, 255);
+  position: absolute;
+  transform:translate(-50%, 0%) ;
+  margin: 50px auto;
+
+}
+.clock ::after{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background:rgb(253, 0, 97);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.No{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* .No::after {
+  content: "";
+  position: absolute;
+  height: 13px;
+  width: 5px;
+  top: 13px;
+  background: rgb(0, 253, 194);
+} */
+.No> div{
+  padding: 12px;
+}
+.no1{
+  transform: rotate(30deg);
+}
+.no1> div{
+  transform: rotate(-30deg);
+}
+.no2{
+  transform: rotate(60deg);
+}
+.no2> div{
+  transform: rotate(-60deg);
+}
+.no3{
+  transform: rotate(90deg);
+}
+.no3> div{
+  transform: rotate(-90deg);
+}
+.no4{
+  transform: rotate(120deg);
+}
+.no4> div{
+  transform: rotate(-120deg);
+}
+.no5{
+  transform: rotate(150deg);
+}
+.no5> div{
+  transform: rotate(-150deg);
+}
+.no6{
+  transform: rotate(180deg);
+}
+.no6> div{
+  transform: rotate(-180deg);
+}
+.no7{
+  transform: rotate(210deg);
+}
+.no7> div{
+  transform: rotate(-210deg);
+}
+.no8{
+  transform: rotate(240deg);
+}
+.no8> div{
+  transform: rotate(-240deg);
+}
+.no9{
+  transform: rotate(270deg);
+}
+.no9> div{
+  transform: rotate(-270deg);
+}
+.no10{
+  transform: rotate(300deg);
+}
+.no10> div{
+  transform: rotate(-300deg);
+}
+.no11{
+  transform: rotate(330deg);
+}
+.no11> div{
+  transform: rotate(-330deg);
+}
+.no12{
+  transform: rotate(360deg);
+}
+.num12> div{
+  transform: rotate(360deg);
+}
+.hands{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.hands> div{
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  border-radius: 12px;
+}
+
+
+.hour_hand{
+  height: 20%;
+  width: 5px;
+  background:rgb(1, 29, 75);
+}
+
+.minute_hand{
+  height: 32%;
+  width: 3px;
+  background: rgb(1, 29, 75);
+
+}
+.second_hand{
+  height: 32%;
+  width: 1px;
+  background: rgb(1, 29, 75);
+
+}
+
+.second_hand::after{
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-width: 4px;
+  border-color: transparent transparent black transparent;
+  left: 50%;
+  transform:  translate(-50%);
+  top: -6%;
+}
+.current-day{
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25%;
+}
+.current-seconds{
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25%;
+  color: #ae3030;
+  padding: 4px;
+}
