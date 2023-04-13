@@ -18,17 +18,7 @@ body{
     margin: 50px auto;
   
   }
-  .clock ::after{
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background:rgb(253, 0, 97);
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-  }
+
   .No{
     position: absolute;
     width: 100%;
@@ -142,16 +132,4 @@ body{
     width: 1px;
     background: rgb(1, 29, 75);
   
-  }
-  
-  .second_hand::after{
-    position: absolute;
-    content: "";
-    border-style: solid;
-    border-width: 4px;
-    border-color: transparent transparent black transparent;
-    left: 50%;
-    transform:  translate(-50%);
-    top: -6%;
-  }
-  
+  } 
